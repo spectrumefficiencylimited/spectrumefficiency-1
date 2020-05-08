@@ -9,12 +9,13 @@ sections:
   label: Pages
   create: all
   match: "*"
-  new_doc_ext: ".rmd"
+  new_doc_ext: rmd
 - type: directory
   path: content/en
   label: En
   create: all
   match: "**/*"
+  new_doc_ext: ".rmd"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
