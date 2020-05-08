@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>gender neutral on Spectrum Efficiency</title>
+    <link>https://www.spectrumefficiency.co.nz/tags/gender-neutral/</link>
+    <description>Recent content in gender neutral on Spectrum Efficiency</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</managingEditor>
+    <webMaster>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://www.spectrumefficiency.co.nz/tags/gender-neutral/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+
+      
+      <item>
+        <title>Spectrum Efficiency</title>
+        <link>https://www.spectrumefficiency.co.nz/about/</link>
+        <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+        <author>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</author>
+        <atom:modified>Fri, 24 Apr 2020 00:00:00 +0000</atom:modified>
+        <guid>https://www.spectrumefficiency.co.nz/about/</guid>
+        <description>I like building data process. A lot. And, unlike my stakeholders, I consider change, just the necessary step, that when implemented together, it makes a significant impact in their work life. Luckily for my stakeholders, I like resolving the business challenges even more.
+I also quite like data visualization – charts and dashboards like sharable data interactions using the Shiny framework. Yes, I like looking at youtube videos of other people building data dashboards in my spare time.</description>
+        
+        <dc:creator>Andrei Stoian</dc:creator>
+        <media:content url="https://www.spectrumefficiency.co.nz//uploads/default.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>R</category>
+            
+          
+            
+              <category>dashboard</category>
+            
+          
+            
+              <category>profile</category>
+            
+          
+            
+              <category>story</category>
+            
+          
+            
+              <category>qualifications</category>
+            
+          
+            
+              <category>experience</category>
+            
+          
+            
+              <category>gender neutral</category>
+            
+          
+            
+              <category>stakeholders</category>
+            
+          
+            
+              <category>contact</category>
+            
+          
+            
+              <category>spectrum management</category>
+            
+          
+            
+              <category>data automation</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
