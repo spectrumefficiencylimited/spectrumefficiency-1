@@ -3,10 +3,8 @@ title: "How did I come up with the logo for Spectrum Efficiency?"
 author: "Andrei Stoian"
 date: "11/05/2020"
 description: "Radio Frequency Spectrum Management unleashed by data automation."
-
 tags: ["contact", "spectrum management", "data automation", "R", "Dashboard"]
 type: "contact"
-
 output: html_document
 ---
 
