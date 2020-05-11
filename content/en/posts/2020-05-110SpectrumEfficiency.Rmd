@@ -44,8 +44,8 @@ Due to conflict of interests, I never pursued the dream of owning a company. I k
 
 
 ```{r sinus}
-vt.lib <- "C:/Users/stoiana/win-library"
-.libPaths(new = vt.lib)
+# vt.lib <- "C:/Users/stoiana/win-library"
+# .libPaths(new = vt.lib)
 
 library(tidyquant)
 library(tidyverse)
