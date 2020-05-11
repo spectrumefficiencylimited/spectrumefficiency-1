@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Presentations on Spectrum Efficiency</title>
-    <link>https://www.spectrumefficiency.co.nz/presentation/</link>
+    <link>/presentation/</link>
     <description>Recent content in Presentations on Spectrum Efficiency</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 30 Oct 2019 19:45:20 +0900</lastBuildDate>
     
-        <atom:link href="https://www.spectrumefficiency.co.nz/presentation/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/presentation/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,15 +24,15 @@
       
       <item>
         <title>First</title>
-        <link>https://www.spectrumefficiency.co.nz/presentation/first/</link>
+        <link>/presentation/first/</link>
         <pubDate>Wed, 30 Oct 2019 19:45:20 +0900</pubDate>
         <author>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</author>
         <atom:modified>Wed, 30 Oct 2019 19:45:20 +0900</atom:modified>
-        <guid>https://www.spectrumefficiency.co.nz/presentation/first/</guid>
+        <guid>/presentation/first/</guid>
         <description></description>
         
         <dc:creator>Andrei Stoian</dc:creator>
-        <media:content url="https://www.spectrumefficiency.co.nz/images/feature1/number-one.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="/images/feature1/number-one.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

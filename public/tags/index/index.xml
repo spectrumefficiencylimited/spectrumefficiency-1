@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>index on Spectrum Efficiency</title>
-    <link>https://www.spectrumefficiency.co.nz/tags/index/</link>
+    <link>/tags/index/</link>
     <description>Recent content in index on Spectrum Efficiency</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -15,7 +15,7 @@
     <webMaster>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     
-        <atom:link href="https://www.spectrumefficiency.co.nz/tags/index/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/index/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -23,11 +23,11 @@
       
       <item>
         <title>Posts</title>
-        <link>https://www.spectrumefficiency.co.nz/posts/</link>
+        <link>/posts/</link>
         <pubDate>Fri, 08 May 2020 12:32:25 +1200</pubDate>
         <author>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</author>
         
-        <guid>https://www.spectrumefficiency.co.nz/posts/</guid>
+        <guid>/posts/</guid>
         <description></description>
         
         <dc:creator>Hugo Authors</dc:creator>

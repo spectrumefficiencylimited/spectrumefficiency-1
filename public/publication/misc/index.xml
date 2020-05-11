@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>misc on Spectrum Efficiency</title>
-    <link>https://www.spectrumefficiency.co.nz/publication/misc/</link>
+    <link>/publication/misc/</link>
     <description>Recent content in misc on Spectrum Efficiency</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Thu, 05 Mar 2020 14:08:48 +0000</lastBuildDate>
     
-        <atom:link href="https://www.spectrumefficiency.co.nz/publication/misc/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/publication/misc/index.xml" rel="self" type="application/rss+xml" />
     
     
     

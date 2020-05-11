@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Tags on Spectrum Efficiency</title>
-    <link>https://www.spectrumefficiency.co.nz/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Spectrum Efficiency</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Fri, 24 Apr 2020 12:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://www.spectrumefficiency.co.nz/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,11 +24,11 @@
       
       <item>
         <title>contact</title>
-        <link>https://www.spectrumefficiency.co.nz/tags/contact/</link>
+        <link>/tags/contact/</link>
         <pubDate>Fri, 24 Apr 2020 12:00:00 +0000</pubDate>
         <author>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</author>
         
-        <guid>https://www.spectrumefficiency.co.nz/tags/contact/</guid>
+        <guid>/tags/contact/</guid>
         <description></description>
         
         <dc:creator>Andrei Stoian</dc:creator>
@@ -42,11 +42,11 @@
       
       <item>
         <title>dashboard</title>
-        <link>https://www.spectrumefficiency.co.nz/tags/dashboard/</link>
+        <link>/tags/dashboard/</link>
         <pubDate>Fri, 24 Apr 2020 12:00:00 +0000</pubDate>
         <author>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</author>
         
-        <guid>https://www.spectrumefficiency.co.nz/tags/dashboard/</guid>
+        <guid>/tags/dashboard/</guid>
         <description></description>
         
         <dc:creator>Andrei Stoian</dc:creator>
@@ -60,11 +60,11 @@
       
       <item>
         <title>data automation</title>
-        <link>https://www.spectrumefficiency.co.nz/tags/data-automation/</link>
+        <link>/tags/data-automation/</link>
         <pubDate>Fri, 24 Apr 2020 12:00:00 +0000</pubDate>
         <author>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</author>
         
-        <guid>https://www.spectrumefficiency.co.nz/tags/data-automation/</guid>
+        <guid>/tags/data-automation/</guid>
         <description></description>
         
         <dc:creator>Andrei Stoian</dc:creator>
@@ -78,11 +78,11 @@
       
       <item>
         <title>R</title>
-        <link>https://www.spectrumefficiency.co.nz/tags/r/</link>
+        <link>/tags/r/</link>
         <pubDate>Fri, 24 Apr 2020 12:00:00 +0000</pubDate>
         <author>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</author>
         
-        <guid>https://www.spectrumefficiency.co.nz/tags/r/</guid>
+        <guid>/tags/r/</guid>
         <description></description>
         
         <dc:creator>Andrei Stoian</dc:creator>
@@ -96,11 +96,11 @@
       
       <item>
         <title>spectrum management</title>
-        <link>https://www.spectrumefficiency.co.nz/tags/spectrum-management/</link>
+        <link>/tags/spectrum-management/</link>
         <pubDate>Fri, 24 Apr 2020 12:00:00 +0000</pubDate>
         <author>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</author>
         
-        <guid>https://www.spectrumefficiency.co.nz/tags/spectrum-management/</guid>
+        <guid>/tags/spectrum-management/</guid>
         <description></description>
         
         <dc:creator>Andrei Stoian</dc:creator>
@@ -114,11 +114,11 @@
       
       <item>
         <title>experience</title>
-        <link>https://www.spectrumefficiency.co.nz/tags/experience/</link>
+        <link>/tags/experience/</link>
         <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
         <author>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</author>
         
-        <guid>https://www.spectrumefficiency.co.nz/tags/experience/</guid>
+        <guid>/tags/experience/</guid>
         <description></description>
         
         <dc:creator>Andrei Stoian</dc:creator>
@@ -132,11 +132,11 @@
       
       <item>
         <title>gender neutral</title>
-        <link>https://www.spectrumefficiency.co.nz/tags/gender-neutral/</link>
+        <link>/tags/gender-neutral/</link>
         <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
         <author>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</author>
         
-        <guid>https://www.spectrumefficiency.co.nz/tags/gender-neutral/</guid>
+        <guid>/tags/gender-neutral/</guid>
         <description></description>
         
         <dc:creator>Andrei Stoian</dc:creator>
@@ -150,11 +150,11 @@
       
       <item>
         <title>profile</title>
-        <link>https://www.spectrumefficiency.co.nz/tags/profile/</link>
+        <link>/tags/profile/</link>
         <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
         <author>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</author>
         
-        <guid>https://www.spectrumefficiency.co.nz/tags/profile/</guid>
+        <guid>/tags/profile/</guid>
         <description></description>
         
         <dc:creator>Andrei Stoian</dc:creator>
@@ -168,11 +168,11 @@
       
       <item>
         <title>qualifications</title>
-        <link>https://www.spectrumefficiency.co.nz/tags/qualifications/</link>
+        <link>/tags/qualifications/</link>
         <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
         <author>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</author>
         
-        <guid>https://www.spectrumefficiency.co.nz/tags/qualifications/</guid>
+        <guid>/tags/qualifications/</guid>
         <description></description>
         
         <dc:creator>Andrei Stoian</dc:creator>
@@ -186,11 +186,11 @@
       
       <item>
         <title>stakeholders</title>
-        <link>https://www.spectrumefficiency.co.nz/tags/stakeholders/</link>
+        <link>/tags/stakeholders/</link>
         <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
         <author>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</author>
         
-        <guid>https://www.spectrumefficiency.co.nz/tags/stakeholders/</guid>
+        <guid>/tags/stakeholders/</guid>
         <description></description>
         
         <dc:creator>Andrei Stoian</dc:creator>
@@ -204,11 +204,11 @@
       
       <item>
         <title>story</title>
-        <link>https://www.spectrumefficiency.co.nz/tags/story/</link>
+        <link>/tags/story/</link>
         <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
         <author>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</author>
         
-        <guid>https://www.spectrumefficiency.co.nz/tags/story/</guid>
+        <guid>/tags/story/</guid>
         <description></description>
         
         <dc:creator>Andrei Stoian</dc:creator>
@@ -222,11 +222,11 @@
       
       <item>
         <title>index</title>
-        <link>https://www.spectrumefficiency.co.nz/tags/index/</link>
+        <link>/tags/index/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         <author>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</author>
         
-        <guid>https://www.spectrumefficiency.co.nz/tags/index/</guid>
+        <guid>/tags/index/</guid>
         <description></description>
         
         <dc:creator>Andrei Stoian</dc:creator>

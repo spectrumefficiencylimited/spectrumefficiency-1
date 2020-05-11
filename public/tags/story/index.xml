@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>story on Spectrum Efficiency</title>
-    <link>https://www.spectrumefficiency.co.nz/tags/story/</link>
+    <link>/tags/story/</link>
     <description>Recent content in story on Spectrum Efficiency</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://www.spectrumefficiency.co.nz/tags/story/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/story/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,16 +24,16 @@
       
       <item>
         <title>Spectrum Efficiency</title>
-        <link>https://www.spectrumefficiency.co.nz/about/</link>
+        <link>/about/</link>
         <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
         <author>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</author>
         <atom:modified>Fri, 24 Apr 2020 00:00:00 +0000</atom:modified>
-        <guid>https://www.spectrumefficiency.co.nz/about/</guid>
+        <guid>/about/</guid>
         <description>I like building data process. A lot. And, unlike my stakeholders, I consider change, just the necessary step, that when implemented together, it makes a significant impact in their work life. Luckily for my stakeholders, I like resolving the business challenges even more.
 I also quite like data visualization – charts and dashboards like sharable data interactions using the Shiny framework. Yes, I like looking at youtube videos of other people building data dashboards in my spare time.</description>
         
         <dc:creator>Andrei Stoian</dc:creator>
-        <media:content url="https://www.spectrumefficiency.co.nz//uploads/default.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//uploads/default.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

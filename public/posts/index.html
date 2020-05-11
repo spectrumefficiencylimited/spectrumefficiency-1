@@ -551,7 +551,7 @@
 
   
     
-    var permalink = JSON.parse("\"https://www.spectrumefficiency.co.nz/posts/\"");
+    var permalink = JSON.parse("\"/posts/\"");
     var searchResults = null;
     var searchMenu = null;
     var searchText = null;
@@ -1203,7 +1203,7 @@
 
 
     
-<link rel="alternate" type="application/rss&#43;xml" title="RSS" href="https://www.spectrumefficiency.co.nz/posts/index.xml">
+<link rel="alternate" type="application/rss&#43;xml" title="RSS" href="/posts/index.xml">
 
 <meta name="description" content="Post page" />
 
@@ -1215,12 +1215,12 @@
 <meta property="article:published_time" content="2020-05-08T12:32:25&#43;1200">
 
 <meta name="author" content="Hugo Authors">
-<meta property="article:author" content="https://www.spectrumefficiency.co.nz/posts/@Hugo Authors">
+<meta property="article:author" content="/posts/@Hugo Authors">
 
 
 <meta property="og:site_name" content="Spectrum Efficiency">
 <meta property="og:title" content="Posts">
-<meta property="og:url" content="https://www.spectrumefficiency.co.nz/posts/">
+<meta property="og:url" content="/posts/">
 <meta property="og:type" content="website">
 <meta property="og:description" content="Post page">
 
@@ -1233,7 +1233,7 @@
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
 
-<link rel="canonical" href="https://www.spectrumefficiency.co.nz/posts/">
+<link rel="canonical" href="/posts/">
 
 <link rel="manifest" href="/manifest.json">
 
@@ -1247,7 +1247,7 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "url" : "https://www.spectrumefficiency.co.nz/posts/",
+    "url" : "/posts/",
     "name": "Posts",
     "description": "Post page",
     "author": {
@@ -1256,12 +1256,12 @@
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.spectrumefficiency.co.nz/"
+      "@id": "/"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Spectrum Efficiency",
-      "url": "https://www.spectrumefficiency.co.nz/"
+      "url": "/"
     }
   }
 </script>
@@ -1609,7 +1609,7 @@ if (!doNotTrack) {
   
   <li >
     
-      <a href="https://www.spectrumefficiency.co.nz/" class="capitalize">Spectrum Efficiency</a>
+      <a href="/" class="capitalize">Spectrum Efficiency</a>
     
   </li>
   
@@ -1642,19 +1642,18 @@ if (!doNotTrack) {
 
     <div class="summary-classic__content">
       <header>
-        <h5 class="title h5"><a href='https://www.spectrumefficiency.co.nz/posts/2020-05-08-ooo/'> fist post</a> </h5>
+        <h5 class="title h5"><a href='/posts/2020-05-08-ooo/'> fist post</a> </h5>
         <h6 class="subtitle caption">
           <time title="Written At" dir="ltr">📅&nbsp;May 8, 2020 </time>
           
-          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;3&nbsp;min read </span>
+          <span title="Reading Time" dir="ltr"> &middot; ☕&nbsp;5&nbsp;min read </span>
           
         </h6>
       </header>
       <div>
         <div class="summary-classic__text p2">
           
-            knitr::opts_chunk$set(echo = TRUE) library(tidyverse) theme_set(theme_light()) horror_movies_raw &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-10-22/horror_movies.csv&quot;) horror_movies &lt;- horror_movies_raw %&gt;% arrange(desc(review_rating)) %&gt;% extract(title, &quot;year&quot;, &quot;\\((\\d\\d\\d\\d)\\)$&quot;, remove = FALSE, convert = TRUE) %&gt;% mutate(budget = parse_number(budget)) %&gt;% separate(plot, c(&quot;director&quot;, &quot;cast_sentence&quot;, &quot;plot&quot;), extra = &quot;merge&quot;, sep = &quot;\\. &quot;, fill = &quot;right&quot;) %&gt;% distinct(title, .keep_all = TRUE) Most of the movies are since 2012.
-horror_movies %&gt;% count(genres, sort = TRUE) horror_movies %&gt;% count(language, sort = TRUE) horror_movies %&gt;% ggplot(aes(budget)) + geom_histogram() + scale_x_log10(labels = scales::dollar) Do higher budget movies end up higher rated?
+            knitr::opts_chunk$set(echo = TRUE)library(tidyverse)## Warning: package &#39;tidyverse&#39; was built under R version 3.6.1## -- Attaching packages ------------------------------------------------------------------------------------------------------------------------------------ tidyverse 1.2.1 --## v ggplot2 3.2.1 v purrr 0.3.2## v tibble 2.1.3 v dplyr 0.8.3## v tidyr 1.0.0 v stringr 1.4.0## v readr 1.3.1 v forcats 0.4.0## Warning: package &#39;ggplot2&#39; was built under R version 3.6.1## Warning: package &#39;tidyr&#39; was built under R version 3.
           
         </div>
       </div>
@@ -2091,7 +2090,7 @@ horror_movies %&gt;% count(genres, sort = TRUE) horror_movies %&gt;% count(langu
   
   
     
-      <a href="https://www.spectrumefficiency.co.nz/posts//index.xml" type="application/rss+xml" title="RSS" aria-label="RSS Feed Link">
+      <a href="/posts//index.xml" type="application/rss+xml" title="RSS" aria-label="RSS Feed Link">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><circle fill="currentColor" cx="6.18" cy="17.82" r="2.18"/><path fill="currentColor" d="M5.59 10.23c-.84-.14-1.59.55-1.59 1.4 0 .71.53 1.28 1.23 1.4 2.92.51 5.22 2.82 5.74 5.74.12.7.69 1.23 1.4 1.23.85 0 1.54-.75 1.41-1.59-.68-4.2-3.99-7.51-8.19-8.18zm-.03-5.71C4.73 4.43 4 5.1 4 5.93c0 .73.55 1.33 1.27 1.4 6.01.6 10.79 5.38 11.39 11.39.07.73.67 1.28 1.4 1.28.84 0 1.5-.73 1.42-1.56-.73-7.34-6.57-13.19-13.92-13.92z"/></svg>
       </a>
     

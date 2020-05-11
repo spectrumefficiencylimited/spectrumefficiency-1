@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Categories on Spectrum Efficiency</title>
-    <link>https://www.spectrumefficiency.co.nz/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Spectrum Efficiency</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -15,7 +15,7 @@
     <webMaster>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     
-        <atom:link href="https://www.spectrumefficiency.co.nz/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     

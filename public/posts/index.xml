@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Posts on Spectrum Efficiency</title>
-    <link>https://www.spectrumefficiency.co.nz/posts/</link>
+    <link>/posts/</link>
     <description>Recent content in Posts on Spectrum Efficiency</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,7 +16,7 @@
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Fri, 08 May 2020 12:32:25 +1200</lastBuildDate>
     
-        <atom:link href="https://www.spectrumefficiency.co.nz/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -24,13 +24,12 @@
       
       <item>
         <title>fist post</title>
-        <link>https://www.spectrumefficiency.co.nz/posts/2020-05-08-ooo/</link>
+        <link>/posts/2020-05-08-ooo/</link>
         <pubDate>Fri, 08 May 2020 12:32:25 +1200</pubDate>
         <author>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</author>
         <atom:modified>Fri, 08 May 2020 12:32:25 +1200</atom:modified>
-        <guid>https://www.spectrumefficiency.co.nz/posts/2020-05-08-ooo/</guid>
-        <description>knitr::opts_chunk$set(echo = TRUE) library(tidyverse) theme_set(theme_light()) horror_movies_raw &amp;lt;- readr::read_csv(&amp;quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-10-22/horror_movies.csv&amp;quot;) horror_movies &amp;lt;- horror_movies_raw %&amp;gt;% arrange(desc(review_rating)) %&amp;gt;% extract(title, &amp;quot;year&amp;quot;, &amp;quot;\\((\\d\\d\\d\\d)\\)$&amp;quot;, remove = FALSE, convert = TRUE) %&amp;gt;% mutate(budget = parse_number(budget)) %&amp;gt;% separate(plot, c(&amp;quot;director&amp;quot;, &amp;quot;cast_sentence&amp;quot;, &amp;quot;plot&amp;quot;), extra = &amp;quot;merge&amp;quot;, sep = &amp;quot;\\. &amp;quot;, fill = &amp;quot;right&amp;quot;) %&amp;gt;% distinct(title, .keep_all = TRUE) Most of the movies are since 2012.
-horror_movies %&amp;gt;% count(genres, sort = TRUE) horror_movies %&amp;gt;% count(language, sort = TRUE) horror_movies %&amp;gt;% ggplot(aes(budget)) + geom_histogram() + scale_x_log10(labels = scales::dollar) Do higher budget movies end up higher rated?</description>
+        <guid>/posts/2020-05-08-ooo/</guid>
+        <description>knitr::opts_chunk$set(echo = TRUE)library(tidyverse)## Warning: package &amp;#39;tidyverse&amp;#39; was built under R version 3.6.1## -- Attaching packages ------------------------------------------------------------------------------------------------------------------------------------ tidyverse 1.2.1 --## v ggplot2 3.2.1 v purrr 0.3.2## v tibble 2.1.3 v dplyr 0.8.3## v tidyr 1.0.0 v stringr 1.4.0## v readr 1.3.1 v forcats 0.4.0## Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 3.6.1## Warning: package &amp;#39;tidyr&amp;#39; was built under R version 3.</description>
         
         <dc:creator>Andrei Stoian</dc:creator>
         
@@ -55,17 +54,17 @@ horror_movies %&amp;gt;% count(genres, sort = TRUE) horror_movies %&amp;gt;% cou
       
       <item>
         <title>Spectrum Efficiency</title>
-        <link>https://www.spectrumefficiency.co.nz/posts/contact-us/</link>
+        <link>/posts/contact-us/</link>
         <pubDate>Fri, 24 Apr 2020 12:00:00 +0000</pubDate>
         <author>spectrum.efficiency.limited@gmail.com (Andrei Stoian)</author>
         <atom:modified>Fri, 24 Apr 2020 12:00:00 +0000</atom:modified>
-        <guid>https://www.spectrumefficiency.co.nz/posts/contact-us/</guid>
+        <guid>/posts/contact-us/</guid>
         <description>I started a company some years ago intending to act as a conduit between tree entities that work together in a symbiosis relation.
 In my opinion, these three entities are
  the public the business/professionals the regulator/government.  I have had prior exposure and training with my first job in New Zealand. It is here that I saw this gap that I wanted to address. When I joined Radio Spectrum Management, I quickly realized how deep the rabbit hole goes and that I have only scratched the surface.</description>
         
         <dc:creator>Andrei Stoian</dc:creator>
-        <media:content url="https://www.spectrumefficiency.co.nz//uploads/default.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="//uploads/default.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

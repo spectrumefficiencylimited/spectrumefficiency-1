@@ -1,0 +1,256 @@
+---
+title: "fist post"
+date: 2020-05-08T12:32:25+12:00
+description:
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+-
+series:
+-
+categories:
+-
+image:
+
+output: html_document
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<pre class="r"><code>knitr::opts_chunk$set(echo = TRUE)</code></pre>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## Warning: package &#39;tidyverse&#39; was built under R version 3.6.1</code></pre>
+<pre><code>## -- Attaching packages ------------------------------------------------------------------------------------------------------------------------------------ tidyverse 1.2.1 --</code></pre>
+<pre><code>## v ggplot2 3.2.1     v purrr   0.3.2
+## v tibble  2.1.3     v dplyr   0.8.3
+## v tidyr   1.0.0     v stringr 1.4.0
+## v readr   1.3.1     v forcats 0.4.0</code></pre>
+<pre><code>## Warning: package &#39;ggplot2&#39; was built under R version 3.6.1</code></pre>
+<pre><code>## Warning: package &#39;tidyr&#39; was built under R version 3.6.1</code></pre>
+<pre><code>## Warning: package &#39;readr&#39; was built under R version 3.6.1</code></pre>
+<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 3.6.1</code></pre>
+<pre><code>## Warning: package &#39;stringr&#39; was built under R version 3.6.1</code></pre>
+<pre><code>## -- Conflicts --------------------------------------------------------------------------------------------------------------------------------------- tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>theme_set(theme_light())
+
+horror_movies_raw &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-10-22/horror_movies.csv&quot;)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   title = col_character(),
+##   genres = col_character(),
+##   release_date = col_character(),
+##   release_country = col_character(),
+##   movie_rating = col_character(),
+##   review_rating = col_double(),
+##   movie_run_time = col_character(),
+##   plot = col_character(),
+##   cast = col_character(),
+##   language = col_character(),
+##   filming_locations = col_character(),
+##   budget = col_character()
+## )</code></pre>
+<pre class="r"><code>horror_movies &lt;- horror_movies_raw %&gt;%
+  arrange(desc(review_rating)) %&gt;%
+  extract(title, &quot;year&quot;, &quot;\\((\\d\\d\\d\\d)\\)$&quot;, remove = FALSE, convert = TRUE) %&gt;%
+  mutate(budget = parse_number(budget)) %&gt;%
+  separate(plot, c(&quot;director&quot;, &quot;cast_sentence&quot;, &quot;plot&quot;), extra = &quot;merge&quot;, sep = &quot;\\. &quot;, fill = &quot;right&quot;) %&gt;%
+  distinct(title, .keep_all = TRUE)</code></pre>
+<p>Most of the movies are since 2012.</p>
+<pre class="r"><code>horror_movies %&gt;%
+  count(genres, sort = TRUE)</code></pre>
+<pre><code>## # A tibble: 261 x 2
+##    genres                               n
+##    &lt;chr&gt;                            &lt;int&gt;
+##  1 Horror                            1048
+##  2 Horror| Thriller                   469
+##  3 Comedy| Horror                     245
+##  4 Horror| Mystery| Thriller          171
+##  5 Drama| Horror| Thriller            159
+##  6 Drama| Horror                       72
+##  7 Horror| Sci-Fi| Thriller            66
+##  8 Drama| Horror| Mystery| Thriller    53
+##  9 Action| Horror| Thriller            48
+## 10 Horror| Mystery                     47
+## # ... with 251 more rows</code></pre>
+<pre class="r"><code>horror_movies %&gt;%
+  count(language, sort = TRUE)</code></pre>
+<pre><code>## # A tibble: 188 x 2
+##    language             n
+##    &lt;chr&gt;            &lt;int&gt;
+##  1 English           2407
+##  2 Spanish             94
+##  3 Japanese            75
+##  4 &lt;NA&gt;                70
+##  5 Hindi               37
+##  6 Filipino|Tagalog    34
+##  7 Thai                34
+##  8 English|Spanish     30
+##  9 Turkish             29
+## 10 German              28
+## # ... with 178 more rows</code></pre>
+<pre class="r"><code>horror_movies %&gt;%
+  ggplot(aes(budget)) +
+  geom_histogram() +
+  scale_x_log10(labels = scales::dollar)</code></pre>
+<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+<pre><code>## Warning: Removed 2077 rows containing non-finite values (stat_bin).</code></pre>
+<p><img src="/en/posts/2020-05-08-ooo_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Do higher budget movies end up higher rated?</p>
+<pre class="r"><code>horror_movies %&gt;%
+  ggplot(aes(budget, review_rating)) +
+  geom_point() +
+  scale_x_log10(labels = scales::dollar) +
+  geom_smooth(method = &quot;lm&quot;)</code></pre>
+<pre><code>## Warning: Removed 2163 rows containing non-finite values (stat_smooth).</code></pre>
+<pre><code>## Warning: Removed 2163 rows containing missing values (geom_point).</code></pre>
+<p><img src="/en/posts/2020-05-08-ooo_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>No relationship between budget and rating. How about movie rating and review?</p>
+<pre class="r"><code>horror_movies %&gt;%
+  mutate(movie_rating = fct_lump(movie_rating, 5),
+         movie_rating = fct_reorder(movie_rating, review_rating, na.rm = TRUE)) %&gt;%
+  ggplot(aes(movie_rating, review_rating)) +
+  geom_boxplot() +
+  coord_flip()</code></pre>
+<pre><code>## Warning: Removed 252 rows containing non-finite values (stat_boxplot).</code></pre>
+<p><img src="/en/posts/2020-05-08-ooo_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<pre class="r"><code>horror_movies %&gt;%
+  filter(!is.na(movie_rating)) %&gt;%
+  mutate(movie_rating = fct_lump(movie_rating, 5)) %&gt;%
+  lm(review_rating ~ movie_rating, data = .) %&gt;%
+  anova()</code></pre>
+<pre><code>## Analysis of Variance Table
+## 
+## Response: review_rating
+##                Df  Sum Sq Mean Sq F value    Pr(&gt;F)    
+## movie_rating    5   70.05 14.0092  9.1759 1.319e-08 ***
+## Residuals    1424 2174.08  1.5267                      
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>horror_movies %&gt;%
+  separate_rows(genres, sep = &quot;\\| &quot;) %&gt;%
+  mutate(genre = fct_lump(genres, 5)) %&gt;%
+  ggplot(aes(genre, review_rating)) +
+  geom_boxplot()</code></pre>
+<pre><code>## Warning: Removed 421 rows containing non-finite values (stat_boxplot).</code></pre>
+<p><img src="/en/posts/2020-05-08-ooo_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<pre class="r"><code>library(tidytext)</code></pre>
+<pre><code>## Warning: package &#39;tidytext&#39; was built under R version 3.6.1</code></pre>
+<pre class="r"><code>horror_movies_unnested &lt;- horror_movies %&gt;%
+  unnest_tokens(word, plot) %&gt;%
+  anti_join(stop_words, by = &quot;word&quot;) %&gt;%
+  filter(!is.na(word))
+
+horror_movies_unnested %&gt;%
+  filter(!is.na(review_rating)) %&gt;%
+  group_by(word) %&gt;%
+  summarize(movies = n(),
+            avg_rating = mean(review_rating)) %&gt;%
+  arrange(desc(movies)) %&gt;%
+  filter(movies &gt;= 100) %&gt;%
+  mutate(word = fct_reorder(word, avg_rating)) %&gt;%
+  ggplot(aes(avg_rating, word)) +
+  geom_point()</code></pre>
+<p><img src="/en/posts/2020-05-08-ooo_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<div id="lasso-regression-for-predicing-review-rating-based-on-words-in-plot" class="section level3">
+<h3>Lasso regression for predicing review rating based on words in plot</h3>
+<pre class="r"><code>library(glmnet)</code></pre>
+<pre><code>## Warning: package &#39;glmnet&#39; was built under R version 3.6.1</code></pre>
+<pre><code>## Loading required package: Matrix</code></pre>
+<pre><code>## 
+## Attaching package: &#39;Matrix&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:tidyr&#39;:
+## 
+##     expand, pack, unpack</code></pre>
+<pre><code>## Loading required package: foreach</code></pre>
+<pre><code>## Warning: package &#39;foreach&#39; was built under R version 3.6.1</code></pre>
+<pre><code>## 
+## Attaching package: &#39;foreach&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:purrr&#39;:
+## 
+##     accumulate, when</code></pre>
+<pre><code>## Loaded glmnet 2.0-18</code></pre>
+<pre class="r"><code>library(Matrix)
+
+movie_word_matrix &lt;- horror_movies_unnested %&gt;%
+  filter(!is.na(review_rating)) %&gt;%
+  add_count(word) %&gt;%
+  filter(n &gt;= 20) %&gt;%
+  count(title, word) %&gt;%
+  cast_sparse(title, word, n)
+
+rating &lt;- horror_movies$review_rating[match(rownames(movie_word_matrix), horror_movies$title)]
+
+lasso_model &lt;- cv.glmnet(movie_word_matrix, rating)</code></pre>
+<pre class="r"><code>library(broom)</code></pre>
+<pre><code>## Warning: package &#39;broom&#39; was built under R version 3.6.2</code></pre>
+<pre class="r"><code>tidy(lasso_model$glmnet.fit) %&gt;%
+  filter(term %in% c(&quot;quickly&quot;, &quot;seek&quot;, &quot;army&quot;, &quot;teacher&quot;, &quot;unexpected&quot;, &quot;friends&quot;, &quot;evil&quot;)) %&gt;%
+  ggplot(aes(lambda, estimate, color = term)) +
+  geom_line() +
+  scale_x_log10() +
+  geom_vline(xintercept = lasso_model$lambda.min) +
+  geom_hline(yintercept = 0, lty = 2)</code></pre>
+<p><img src="/en/posts/2020-05-08-ooo_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<pre class="r"><code>plot(lasso_model)</code></pre>
+<p><img src="/en/posts/2020-05-08-ooo_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<pre class="r"><code>tidy(lasso_model$glmnet.fit) %&gt;%
+  filter(lambda == lasso_model$lambda.min,
+         term != &quot;(Intercept)&quot;) %&gt;%
+  mutate(term = fct_reorder(term, estimate)) %&gt;%
+  ggplot(aes(term, estimate)) +
+  geom_col() +
+  coord_flip()</code></pre>
+<p><img src="/en/posts/2020-05-08-ooo_files/figure-html/unnamed-chunk-11-2.png" width="672" /></p>
+<p>Throwing everything into a linear model: director, cast, genre, rating, plot words.</p>
+<pre class="r"><code>features &lt;- horror_movies %&gt;%
+  filter(!is.na(review_rating)) %&gt;%
+  select(title, genres, director, cast, movie_rating, language, release_country) %&gt;%
+  mutate(director = str_remove(director, &quot;Directed by &quot;)) %&gt;%
+  gather(type, value, -title) %&gt;%
+  filter(!is.na(value)) %&gt;%
+  separate_rows(value, sep = &quot;\\| ?&quot;) %&gt;%
+  unite(feature, type, value, sep = &quot;: &quot;) %&gt;%
+  mutate(n = 1)
+
+movie_feature_matrix &lt;- horror_movies_unnested %&gt;%
+  filter(!is.na(review_rating)) %&gt;%
+  count(title, feature = paste0(&quot;word: &quot;, word)) %&gt;%
+  bind_rows(features) %&gt;%
+  add_count(feature) %&gt;%
+  filter(n &gt;= 10) %&gt;%
+  cast_sparse(title, feature)
+
+rating &lt;- horror_movies$review_rating[match(rownames(movie_feature_matrix), horror_movies$title)]
+
+feature_lasso_model &lt;- cv.glmnet(movie_feature_matrix, rating)</code></pre>
+<pre class="r"><code>plot(feature_lasso_model)</code></pre>
+<p><img src="/en/posts/2020-05-08-ooo_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<pre class="r"><code>tidy(feature_lasso_model$glmnet.fit) %&gt;%
+  filter(lambda == feature_lasso_model$lambda.1se,
+         term != &quot;(Intercept)&quot;) %&gt;%
+  mutate(term = fct_reorder(term, estimate)) %&gt;%
+  ggplot(aes(term, estimate)) +
+  geom_col() +
+  coord_flip() +
+  labs(x = &quot;&quot;,
+       y = &quot;Coefficient for predicting movie rating&quot;,
+       title = &quot;What affects a horror movie rating?&quot;,
+       subtitle = &quot;Based on a lasso regression to predict IMDb ratings of ~3000 movies&quot;)</code></pre>
+<p><img src="/en/posts/2020-05-08-ooo_files/figure-html/unnamed-chunk-13-2.png" width="672" /></p>
+<p>What am I going to watch?</p>
+<pre class="r"><code>horror_movies %&gt;%
+  filter(str_detect(genres, &quot;Comedy&quot;),
+         !is.na(movie_rating),
+         !is.na(budget),
+         movie_rating != &quot;PG&quot;) %&gt;%
+  arrange(desc(review_rating)) %&gt;%
+  select(title, review_rating, movie_rating, plot, director, budget, language) %&gt;%
+  View()</code></pre>
+</div>
