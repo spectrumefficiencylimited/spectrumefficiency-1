@@ -1,0 +1,92 @@
+---
+title: "How did I come up with the logo for Spectrum Efficiency?"
+author: "Andrei Stoian"
+date: "11/05/2020"
+description: "Radio Frequency Spectrum Management unleashed by data automation."
+
+tags: ["contact", "spectrum management", "data automation", "R", "Dashboard"]
+type: "contact"
+
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+
+
+```
+
+
+# What is Spectum Efficiency
+
+I started my journey in the corporate world. Before coming to New Zealand, I was planning, drive testing, optimizing 3G, and 4G networks in Europe. As a [__Radio Frequency Engineer__](https://en.wikipedia.org/wiki/Radio-frequency_engineering), one mostly works for the vendors. In my case, I have worked for:
+
+- [Alcatel-Lucent(Nokia)](https://en.wikipedia.org/wiki/Alcatel-Lucent)
+- [Huawei](https://en.wikipedia.org/wiki/Huawei)
+
+My first job in New Zealand is where I met the regulator of this country for the first time. [Radio Spectrum Management](https://www.rsm.govt.nz/). I became an Approved Radio Engineer,[ARE176](https://www.rsm.govt.nz/engineers-and-examiners/list-of-engineers-and-examiners/?keyword=Andrei%20Mircea&public_availability=no_available_public). In the beginning, I optimized the licensing process that every site had to go through obtaining a spectrum license. It is here that I saw this gap that I wanted to address. When I joined __Radio Spectrum Management__, three years later, I quickly realized how deep the rabbit hole goes and that I have only scratched the surface.
+
+Spectrum Management of 
+
+I started a company some years ago intending to act as a conduit between tree entities that work together in a symbiotic relationship.
+In my opinion, these three entities were: 
+
+* the public
+* the business/professionals
+* the regulator/government.
+Thus Spectrum Efficiency was incorporated:
+
+<!-- ![](C:R/spectrumefficiency/static/uploads/spectrum_efficiency_limited_certificate_of_incorporation.JPG) -->
+
+Due to conflict of interests, I never pursued the dream of owning a company. I kept the name and it stands for:
+
+
+```{r sinus}
+vt.lib <- "C:/Users/stoiana/win-library"
+.libPaths(new = vt.lib)
+
+library(tidyquant)
+library(tidyverse)
+library(ggplot2)
+library(blogdown)
+
+
+df.points <- tibble(ID = c(1,2,3,4,5,6,7)
+                    ,X = c(0,0,3.125,3.125,3.125,6.25,6.25)
+                    ,Y = c(5,0,0,2.5,0,0,5),size = 5)
+
+
+t=seq(0,6.3,0.1)
+y=5*sin(t)
+
+plot(t,y,type="l")
+
+df.sin <- tibble(X = t,Y=y)
+
+g <- ggplot(data = df.sin, aes(x = X,y = Y))+
+  geom_line(aes(size = 5),show.legend = FALSE)+
+  scale_x_continuous(breaks = c(1,2,3,4,5,6,7,8,9,10))+
+  scale_y_continuous(breaks = c(-1,-2,-3,-4,-5,0,1,2,3,4,5))+
+  # geom_text(data = df.points,aes(x = X,y = Y,label = ID,color = "white"),show.legend = FALSE)+
+  geom_line(data = df.points,aes(x = X,y = Y,color = "green",size = 5),show.legend = FALSE)+
+  geom_point(data = df.points,aes(x = X,y = Y,color = "red",size = 9),show.legend = FALSE)+
+  theme_tq()+
+  scale_color_tq()+
+  labs(x ="",
+       y ="",
+       color = NULL,
+       size = NULL,
+       title = "This is how I came up with my log for Spectrum Efficiency",
+       subtitle = "It is a revesed sinus wave and the letter E")
+
+g
+  
+
+
+
+```
+

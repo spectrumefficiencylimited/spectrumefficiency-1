@@ -1,4 +1,11 @@
+
+vt.lib <- "C:/Users/stoiana/win-library"
+.libPaths(new = vt.lib)
+
+library(tidyquant)
+library(tidyverse)
+library(ggplot2)
 library(blogdown)
+
 blogdown::serve_site()
-new_content(path = "",kind = "posts")
-blogdown::install_hugo(version = "latest",force = TRUE)
+
