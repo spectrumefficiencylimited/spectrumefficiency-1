@@ -3,32 +3,17 @@ title: "How did I come up with the logo for Spectrum Efficiency?"
 author: "Andrei Stoian"
 date: 2020-11-14T12:00:06+09:00
 description: "Radio Frequency Spectrum Management unleashed by data automation."
-<<<<<<< HEAD
 tags: ["contact", "spectrum management", "data automation", "R", "Dashboard"]
 type: "posts"
 output: html_document
 ---
-=======
-tags: ["logo", "spectrum management", "data automation", "R", "dashboard","visualisation"]
-type: "posts"
-output:
-  html_document:
-    theme: flatly
-    highlight: tango
----
 
-# Intro
-
->>>>>>> 73f0fa4d32627d2a691b59e431b3a357710aa727
-
-```{r setup, include=FALSE}
+```{r setup, include=TRUE}
 knitr::opts_chunk$set(
 	echo = FALSE,
 	message = FALSE,
 	warning = FALSE
 )
-vt.lib <- "C:/Users/stoiana/win-library"
-.libPaths(new = vt.lib)
 
 
 dir.image <- "static"
@@ -185,52 +170,3 @@ In my opinion, these three entities were:
 Thus Spectrum Efficiency was incorporated:
 
 <!-- ![](C:R/spectrumefficiency/static/uploads/spectrum_efficiency_limited_certificate_of_incorporation.JPG) -->
-
-Due to conflict of interests, I never pursued the dream of owning a company. I kept the name and it stands for:
-
-
-```{r sinus}
-# vt.lib <- "C:/Users/stoiana/win-library"
-# .libPaths(new = vt.lib)
-
-library(tidyquant)
-library(tidyverse)
-library(ggplot2)
-library(blogdown)
-
-
-df.points <- tibble(ID = c(1,2,3,4,5,6,7)
-                    ,X = c(0,0,3.125,3.125,3.125,6.25,6.25)
-                    ,Y = c(5,0,0,2.5,0,0,5),size = 5)
-
-
-t=seq(0,6.3,0.1)
-y=5*sin(t)
-
-plot(t,y,type="l")
-
-df.sin <- tibble(X = t,Y=y)
-
-g <- ggplot(data = df.sin, aes(x = X,y = Y))+
-  geom_line(aes(size = 5),show.legend = FALSE)+
-  scale_x_continuous(breaks = c(1,2,3,4,5,6,7,8,9,10))+
-  scale_y_continuous(breaks = c(-1,-2,-3,-4,-5,0,1,2,3,4,5))+
-  # geom_text(data = df.points,aes(x = X,y = Y,label = ID,color = "white"),show.legend = FALSE)+
-  geom_line(data = df.points,aes(x = X,y = Y,color = "green",size = 5),show.legend = FALSE)+
-  geom_point(data = df.points,aes(x = X,y = Y,color = "red",size = 9),show.legend = FALSE)+
-  theme_tq()+
-  scale_color_tq()+
-  labs(x ="",
-       y ="",
-       color = NULL,
-       size = NULL,
-       title = "This is how I came up with my log for Spectrum Efficiency",
-       subtitle = "It is a revesed sinus wave and the letter E")
-
-g
-  
-
-
-
-```
-
