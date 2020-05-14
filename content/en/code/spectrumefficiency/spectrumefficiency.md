@@ -7,4 +7,9 @@ link: https://github.com/StoianAndrei/spectrumefficiency
 repo: https://github.com/StoianAndrei/spectrumefficiency
 pinned: true
 thumb: feature3/css3.png
+shields:
+- name:  GitHub stars
+  image:  https://img.shields.io/github/stars/StoianAndrei/spectrumefficiency?label=Star&style=social
+  link:  https://github.com/StoianAndrei/spectrumefficiency.git
+---
 ---
