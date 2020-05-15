@@ -39,3 +39,9 @@
   name = "Publications"
   url = "publication"
   weight = 7
+ 
+ [[main]]
+  identifier = "resume"
+  name = "C.V."
+  url = "resume"
+  weight = 1

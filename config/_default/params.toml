@@ -3,15 +3,15 @@ logoType = "short" # long, short
 description = "Radio Frequency Spectrum management unleashed through data automation."
 custom_css = []
 custom_js = []
-useFaviconGenerator = false # https://www.favicon-generator.org/
+useFaviconGenerator = true # https://www.favicon-generator.org/
 meta_image = ""
 themecolor = "light"
 
 themeOptions = ["dark", "light", "hacker", "solarized", "kimbie"]
 notAllowedTypesInHome = ["contact", "talks", "about", "code", "publication", "presentation", "resume"]
-notAllowedTypesInHomeSidebar = ["about", "archive", "code", "publication", "presentation", "resume"]
+notAllowedTypesInHomeSidebar = ["about", "archive", "code", "publication", "presentation"]#, "resume"
 notAllowedTypesInArchive = ["about", "talks", "code", "publication", "presentation", "resume"]
-notAllowedTypesInHomeFeed = ["about", "archive", "contact", "talks", "code", "publication", "presentation", "resume", "gallery"]
+notAllowedTypesInHomeFeed = ["about", "archive", "contact", "talks", "code", "publication", "presentation",  "gallery", "resume"]
 
 viewportSize = "normal" # widest, wider, wide, normal, narrow
 enableUiAnimation = true
