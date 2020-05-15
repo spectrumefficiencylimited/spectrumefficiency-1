@@ -1,4 +1,4 @@
-logoText = "Andrei Stoian"
+logoText = "Home"
 logoType = "short" # long, short
 description = "Radio Frequency Spectrum management unleashed through data automation."
 custom_css = []
@@ -43,7 +43,7 @@ pubPaginate = 20
 myname = "Andrei Stoian"
 email = "spectrum.efficiency.limited@gmail.com"
 whoami = "Data Analytics with telecommunication SME"
-bioImageUrl = "/images/whoami/Andrei Stoian.jpg"
+bioImageUrl = "/images/whoami/Andrei Stoian.png"
 useGravatar = false
 location = "Wellington, New Zealand"
 organization = "Spectrum Efficiency"
@@ -142,10 +142,10 @@ commento = false
 
 [socialOptions]
   email = "spectrum.efficiency.limited@gmail.com"
-  phone = "0273982291"
+  phone = "Tel:+64273982291"
   facebook = "https://www.facebook.com/andrei.stoian.9461799"
   twitter = "https://twitter.com/lord_stoian"
-  github = "https://github.com/StoianAndrei/spectrumefficiency"
+  github = "https://github.com/StoianAndrei/"
   stack-overflow = ""
   instagram = ""
   google-plus = ""

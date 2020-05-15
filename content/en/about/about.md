@@ -18,9 +18,7 @@ tags:
 - contact
 - spectrum management
 - data automation
-service: formspree # formspree, getform
-formId: ""
-getformToken: ""
+
 ---
 
 I started a company some years ago intending to act as a conduit between tree entities that work together in a symbiosis relation.

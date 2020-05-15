@@ -2,21 +2,24 @@
   identifier = "about"
   name = "About"
   url = "about"
-  weight = 1
+  weight = 6
+
+#[[main]]
+#  identifier = "archive"
+#  name = "Archive"
+#  url = "archive"
+#  weight = 2
 
 [[main]]
-  identifier = "archive"
-  name = "Archive"
-  url = "archive"
-  weight = 2
-
-[[main]]
+  parent = "posts"
   identifier = "slides"
   name = "Get slides"
   url = "slides"
   weight = 3
 
+
 [[main]]
+  parent = "posts"
   identifier = "graphs"
   name = "Get graphs"
   url = "graphs"
@@ -24,21 +27,28 @@
     
 [[main]]
   identifier = "posts"
-  name = "Posts"
+  name = "Free Resources"
+  url = "posts"
+  weight = 5    
+
+[[main]]
+  parent = "posts"
+  name = "Blog"
   url = "posts"
   weight = 5
 
 [[main]]
+  parent = "posts"
   identifier = "code"
   name = "Get code"
   url = "code"
-  weight = 6
+  weight = 1
 
-[[main]]
-  identifier = "publication"
-  name = "Publications"
-  url = "publication"
-  weight = 7
+#[[main]]
+#  identifier = "publication"
+#  name = "Publications"
+#  url = "publication"
+#  weight = 7
  
  [[main]]
   parent = "about"
@@ -50,3 +60,11 @@
   name = "About"
   url = "about/about"
   weight = 2
+
+[[main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "contact"
+  weight = 7
+
+  
