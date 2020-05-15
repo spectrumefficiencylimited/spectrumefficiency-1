@@ -41,7 +41,12 @@
   weight = 7
  
  [[main]]
-  identifier = "resume"
-  name = "C.V."
-  url = "resume"
+  parent = "about"
+  name = "My curiculum"
+  url = "about/resume"
   weight = 1
+  [[main]]
+  parent = "about"
+  name = "About"
+  url = "about/about"
+  weight = 2
